@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+    grid-area: header;
+
+    position: fixed;
+
+    height: 80px;
+    width: 100%;
+
+    transition: 0.6s;
+    background-color: #0000005e;
+    border-top: 2px solid #edb12a;
+    box-sizing: border-box;
+    border-bottom: 0.5px solid #ffffff69;
+    z-index: 50;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 20px;
+
+        li {
+            a {
+                border-radius: 4px;
+                color: white;
+                text-decoration: none;
+                background: rgb(91 91 91 / 31%);
+                padding: 10px 30px;
+            }
+                
+            a:hover {
+            background: rgba(255, 255, 255, 0.126);
+            color: rgb(255, 204, 0);
+            outline: 1px solid rgba(255, 238, 55, 0.311);
+            transition: .4s;
+            }
+        }
+    }
+}
+
+.headerAnimation {
+    height: 60px;
+    transition: 0.6s;
+}

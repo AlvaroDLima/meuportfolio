@@ -23,6 +23,7 @@ module.exports = {
   entry: [
       './src/main.js', 
       './src/assets/js/script.js', 
+      './src/assets/js/header.js'
     ],
 
   /**

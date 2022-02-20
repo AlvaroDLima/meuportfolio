@@ -1,10 +1,14 @@
-//MENU HAMBUR & ANIMATE
+
+
+
+/*** 
+ * //MENU HAMBUR & ANIMATE
 const btnMobile = document.getElementById('btn-mobile');
 const btns = document.querySelectorAll('#header a[href^="#"]');
 const nav = document.getElementById('nav');
 const menu = document.getElementById('menu')
 
-function toggleMenu(event) {
+ * function toggleMenu(event) {
     if (event.type === 'touchstart') {
         event.preventDefault()
     }
@@ -13,29 +17,21 @@ function toggleMenu(event) {
     menu.classList.toggle('active')
 }
 
+
 btns.forEach(item => {
     item.addEventListener('click', toggleMenu)
 })
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+ */
 
 
 // CHANGE HEADER COLOR & ANIMATE
-(function () {
-    let header = document.getElementById('header');
-    let menuBtns = document.getElementById('menu');
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 1) {
-            header.classList.add('headerColorido')
-            menuBtns.classList.add('menuAdaptado')
-        } else {
-            header.classList.remove('headerColorido')
-            menuBtns.classList.remove('menuAdaptado')
-        }
-    });
-})();
 
+
+
+/*
 // AUTO SELECT BUTTON:RADIOS
 let counter = 1;
 function startCounter () {
@@ -46,7 +42,6 @@ function startCounter () {
     }
 }
 setInterval(startCounter, 3000);
-
 
 // CARROUSSEL
 const imgs = document.getElementById("linguagens");
@@ -89,3 +84,4 @@ btns.forEach(link => {
 })
 
 
+*/
