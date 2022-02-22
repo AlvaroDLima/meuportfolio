@@ -216,38 +216,46 @@ main {
         aside {
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
-            flex-wrap: nowrap;
-    
+            justify-content: space-between;
+            flex-direction: row;
             overflow: hidden;
-            height: 400px;
-            width: 1000px;
+            width: 70%;
 
-            .cards {
+            .all-cards {
                 display: flex;
                 align-items: center;
-                justify-content: space-evenly;
-                flex-direction: column;
-
-                height: 210px;
-                width: 210px;
-                margin: 0px 50px;
-
-                text-align: center;
-                transform: translateX(500px);
-
-                i {
-                    font-size: 80px;
-                }
-
-                span {
-                    font-size: 25px;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                
+                height: 400px;
+                width: 60%;
+                
+    
+                .cards {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+    
+                    height: 210px;
+                    margin-left: 50px;
+                    text-align: center;
+    
+                    i {
+                        font-size: 80px;
+                    }
+    
+                    span {
+                        font-size: 25px;
+                    }
                 }
             }
-        }
-        
-    }
 
+            .all-cards:nth-child(2) {
+                margin-left: 150px;
+            }
+        }
+    }
 }
 
 main #section-formacao-academica {
