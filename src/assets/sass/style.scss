@@ -215,11 +215,9 @@ main {
     #section-skills {
         aside {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
             flex-direction: row;
             overflow: hidden;
-            width: 70%;
+            max-width: 1250px;
 
             .all-cards {
                 display: flex;
@@ -228,9 +226,7 @@ main {
                 flex-wrap: nowrap;
                 
                 height: 400px;
-                width: 60%;
                 
-    
                 .cards {
                     display: flex;
                     align-items: center;
@@ -249,10 +245,6 @@ main {
                         font-size: 25px;
                     }
                 }
-            }
-
-            .all-cards:nth-child(2) {
-                margin-left: 150px;
             }
         }
     }
