@@ -209,6 +209,8 @@ main {
     }
 
     #section-skills {
+        border-bottom: 1px solid $newGray;
+
         aside {
             display: flex;
             flex-direction: row;
@@ -246,43 +248,67 @@ main {
     }
 
     #section-hobbies {
-        height: 400px;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         
-
-        aside {
+        #section__hobbies-asides {
             display: flex;
+            justify-content: space-evenly;
             align-items: center;
-            justify-content: space-around;
-
-            height: inherit;
             width: 100%;
-            
-            .cards {
+
+            aside:nth-of-type(1) {
                 display: flex;
-                justify-content: space-evenly;
                 align-items: center;
+                justify-content: space-around;
                 flex-direction: column;
 
-                height: 180px;
-                width: 160px;
-        
-                border-radius: 7px;
-                border: 1px solid $newLightYellow;
-
-                &:nth-of-type(odd) {
-                    background-color: $newLightYellow;
-                }
-
-                i {
-                    font-size: 60px;
-                }
-
-                span {
-                    text-align: center;
-                    font-size: 23px;
+                height: 450px;
+                width: 500px;
+                
+                .cards {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+    
+                    height: 60px;
+                    width: 350px;
+            
+                    border-radius: 7px;
+                    border: 1px solid $newLightYellow;
+    
+                    .circle {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                        height: 50px;
+                        width: 50px;
+    
+                        border-radius: 100px;
+                        background-color: $newVeryLightYellow;
+    
+                        i {
+                            font-size: 30px;
+                        }
+    
+                        span {
+                            font-size: 19px;
+                        }
+                    }
                 }
             }
+
+            aside:nth-of-type(2) {
+                height: 450px;
+                width: 30%;
+
+                background-color: $newVeryLightYellow;
+            }
         }
+        
     }
 
     #section-formacao-academica {
@@ -293,7 +319,7 @@ main {
         
         height: 600px;
 
-        background-color: $newLightYellow;
+        background-color: $newVeryLightYellow;
 
         #card-instituicao {
             display: flex;
