@@ -1,7 +1,7 @@
 const changeHeaderClass = () => {
     let header = document.querySelector('header');
     
-    window.addEventListener('scroll', function () {
+    window.addEventListener('scroll', () => {
         if (window.scrollY > 1) {
             header.classList.add('headerAnimation')
         } else {

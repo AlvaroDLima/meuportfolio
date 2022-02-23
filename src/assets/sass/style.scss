@@ -175,10 +175,6 @@ main {
 
     }
 
-    svg {
-        margin-top: -90px;
-    }
-
     #section-sobre-mim {
         display: flex;
         align-items: flex-start;
@@ -230,10 +226,10 @@ main {
                 .cards {
                     display: flex;
                     align-items: center;
-                    justify-content: space-evenly;
+                    justify-content: space-around;
                     flex-direction: column;
     
-                    height: 210px;
+                    height: 180px;
                     margin-left: 50px;
                     text-align: center;
     
@@ -248,28 +244,83 @@ main {
             }
         }
     }
-}
 
-main #section-formacao-academica {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    #section-hobbies {
+        height: 400px;
+        
 
-    #card-instituicao {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: row;
-        flex-wrap: wrap;
-
-        .cards {
+        aside {
             display: flex;
             align-items: center;
-            justify-content: center;
-            flex-direction: column;
+            justify-content: space-around;
+
+            height: inherit;
+            width: 100%;
+            
+            .cards {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+
+                height: 180px;
+                width: 160px;
         
-            height: 300px;
+                border-radius: 7px;
+                border: 1px solid $newLightYellow;
+
+                &:nth-of-type(odd) {
+                    background-color: $newLightYellow;
+                }
+
+                i {
+                    font-size: 60px;
+                }
+
+                span {
+                    text-align: center;
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+
+    #section-formacao-academica {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        
+        height: 600px;
+
+        background-color: $newLightYellow;
+
+        #card-instituicao {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            width: 100%;
+    
+            .cards {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                text-align: center;
+                
+                border: 1px solid white ;
+
+                height: 350px;
+                width: 300px;
+                
+                &:nth-of-type(1), &:nth-of-type(4) {
+                    background-color: white;
+                }
+            }
         }
     }
 }

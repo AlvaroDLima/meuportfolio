@@ -18,7 +18,6 @@
     "file-loader": "^6.2.0",
     "firebase": "^9.6.7",
     "html-minimizer-webpack-plugin": "^3.5.0",
-    "jquery": "^3.6.0",
     "mini-css-extract-plugin": "^2.4.6",
     "node-sass": "^7.0.1",
     "path": "^0.12.7",
