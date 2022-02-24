@@ -24,7 +24,8 @@ module.exports = {
       './src/main.js', 
       './src/assets/js/script.js', 
       './src/assets/js/header.js',
-      './src/assets/js/carrousel.js'
+      './src/assets/js/carrousel.js',
+      './src/assets/js/jobs.js'
     ],
 
   /**
@@ -77,9 +78,6 @@ module.exports = {
             }, {
               from: './src/assets/js/smtp.js',
               to: path.resolve(__dirname, 'public/assets/js')
-            }, {
-              from: './src/assets/js/particles.js-master',
-              to: path.resolve(__dirname, 'public/assets/js/particles')
             }
           ]
       })
