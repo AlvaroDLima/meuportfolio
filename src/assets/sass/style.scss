@@ -476,7 +476,7 @@ main {
         
         height: 600px;
 
-        background-color: $newVeryLightYellow;
+        background-color: white;
 
         #card-instituicao {
             display: flex;
@@ -495,13 +495,15 @@ main {
 
                 text-align: center;
                 
-                border: 1px solid white ;
+                border: 1px solid $newLightYellow;
+                border-radius: 6px;
 
                 height: 350px;
                 width: 300px;
                 
                 &:nth-of-type(1), &:nth-of-type(4) {
-                    background-color: white;
+                    background-color: $newLightYellow;
+                    
                 }
             }
         }
