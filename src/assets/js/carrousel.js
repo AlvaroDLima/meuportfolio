@@ -1,12 +1,12 @@
-let firstDivCards = document.querySelector('#section-skills .all-cards:nth-of-type(1)')
-let secondDivCards = firstDivCards.cloneNode(true)
-document.querySelector('#section-skills aside').appendChild(secondDivCards)
+let firstDivCards = document.querySelector('#section-skills .all-cards:nth-of-type(1)');
+let secondDivCards = firstDivCards.cloneNode(true);
+document.querySelector('#section-skills aside').appendChild(secondDivCards);
 
-let containerSize = firstDivCards.offsetWidth
-let translateValue = 1
+let containerSize = firstDivCards.offsetWidth;
+let translateValue = 1;
 
 function carrousel() {
-        translateValue--
+        translateValue--;
 
         if(translateValue > -1538) {
             firstDivCards.style.transform = `translateX(${translateValue}px)`
@@ -19,5 +19,5 @@ function carrousel() {
 }
 
 setInterval(() => {
-    carrousel()
+    carrousel();
 }, 7);

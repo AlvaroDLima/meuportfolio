@@ -3,9 +3,9 @@ const changeHeaderClass = () => {
     
     window.addEventListener('scroll', () => {
         if (window.scrollY > 1) {
-            header.classList.add('headerAnimation')
+            header.classList.add('headerAnimation');
         } else {
-            header.classList.remove('headerAnimation')
+            header.classList.remove('headerAnimation');
         }
     });
-}; changeHeaderClass()
+}; changeHeaderClass();
