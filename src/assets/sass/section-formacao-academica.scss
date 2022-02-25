@@ -25,7 +25,7 @@
 
             text-align: center;
             
-            border: 1px solid $lightRed;
+            border: 1px solid $blue3;
             border-radius: 6px;
 
             height: 350px;
@@ -37,7 +37,7 @@
             }
 
             &:nth-of-type(2), &:nth-of-type(4) {
-                background-color: $lightRed;
+                background-color: $blue3;
                 
             }
         }

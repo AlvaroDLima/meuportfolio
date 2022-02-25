@@ -6,8 +6,7 @@
 
     height: 500px;
 
-    background: linear-gradient(149deg, white, white, white, #F25260, #F20732);
-
+    border-bottom: 1px solid $blue3;
     aside {
         display: flex;
         align-items: center;
@@ -56,7 +55,7 @@
 
                    
                     border-radius: 7px;
-                    border: 1px solid $mediumRed;
+                    border: 1px solid $blue2;
 
                     h3 {
                         margin: 0;
@@ -74,12 +73,15 @@
 
                     padding: 8px;
 
-                    background-color: $lightRed;
+                    background-color: $red1;
                     box-shadow: 1px 1px 5px rgba(73, 73, 73, 0.193);
                     border-radius: 100px;
                     border: none;
                     cursor: pointer;
-                    
+                
+                    &:hover {
+                        background-color: $blue2;
+                    }
 
                     i {
                         font-size: 15px;
@@ -110,22 +112,6 @@
                     height: 80px;
                 }
             }
-        }
-
-        #section__experienciaprofissional-rectangle {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            height: 170px;
-            width: 300px;
-            background-color: white;
-
-            border-top: 1px solid $mediumRed;
-            border-left: 1px solid $mediumRed;
-            border-right: 1px solid $mediumRed;
-            border-radius: 8px;
-            box-shadow: 8px 20px 20px 0px rgb(0 0 0 / 15%);
         }
     }
 

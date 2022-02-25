@@ -6,7 +6,7 @@
     
     
     background-color: $newGray;
-    border-top: 7px solid $lightRed;
+    border-top: 7px solid $blue3;
     
     article {
         display: flex;
@@ -35,16 +35,14 @@
 
             box-shadow: 1px 1px 5px #00000061;
             border-radius: 13px;
-            border: 1px solid $mediumRed;
+            border: 1px solid $blue2;
             
 
 
             h3 {
+                color: $red1;
                 font-size: 40px;
                 font-weight: bolder;
-                background: -webkit-linear-gradient(#a5303a, #b34d49, #b54e4b);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
             }
 
             p {
@@ -52,7 +50,7 @@
             }
 
             h4 {
-                color: $lightRed;
+                color: $blue3;
             }
 
             #btns {
@@ -78,10 +76,10 @@
 
                     &:nth-child(1) {
                         color: white;
-                        background-color: $lightRed;
+                        background-color: $red1;
 
                         &:hover {
-                            background-color: $mediumRed
+                            background-color: $blue2
                         }
                     }
 

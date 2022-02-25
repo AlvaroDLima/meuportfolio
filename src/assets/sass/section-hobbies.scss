@@ -26,7 +26,7 @@
 
             padding: 20px;
 
-            background-color: $veryLightBlue;
+            background-color: $red1;
             box-shadow: inset 1px 0px 20px 0px rgb(105 105 105 / 22%);
 
             height: 450px;
@@ -41,8 +41,8 @@
                 padding: 0px 50px;
         
                 border-radius: 7px;
-                border: 1px solid $lightRed;
-                box-shadow: 8px 20px 20px 0px rgba(68, 68, 68, 0.15);
+                border: 1px solid $blue3;
+                box-shadow: 8px 20px 20px 0px rgb(0 0 0 / 41%);
                 background-color: white;
 
                 .circle {
@@ -83,16 +83,21 @@
 
             h1 {
                 span {
-                    color: $lightRed;
+                    color: $blue3;
                 }
             }
 
             button {
                 padding: 10px 20px;
 
-                background-color: $mediumRed;
+                background-color: $red1;
                 border: none;
                 border-radius: 8px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $blue2;
+                }
             }
         }
     }
