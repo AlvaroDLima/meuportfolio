@@ -1,0 +1,132 @@
+#section__experienciaprofissional {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+    height: 500px;
+
+    background: linear-gradient(149deg, white, white, white, #F25260, #F20732);
+
+    aside {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+
+        #section__experienciaprofissional-circles {    
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            height: 200px;
+            width: 700px;
+
+            .circle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                height: 170px;
+                width: 100px;
+                background-color: white;
+
+                border-radius: 100px;
+                box-shadow: 8px 20px 20px 0px rgb(0 0 0 / 15%);
+
+                transition: .4s;
+                
+                .left-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+
+                .newDivJS {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    text-align: center;
+
+                    height: 110px;
+                    width: 400px;
+
+                   
+                    border-radius: 7px;
+                    border: 1px solid $mediumRed;
+
+                    h3 {
+                        margin: 0;
+                    }
+
+                    p {
+                        margin: 0;
+                        font-weight: lighter;
+                        font-size: 14px;
+                    }
+                }
+
+                button {
+                    display: flex;
+
+                    padding: 8px;
+
+                    background-color: $lightRed;
+                    box-shadow: 1px 1px 5px rgba(73, 73, 73, 0.193);
+                    border-radius: 100px;
+                    border: none;
+                    cursor: pointer;
+                    
+
+                    i {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .circle:nth-of-type(1) {
+                img {
+                    height: 90px;
+                }
+            }
+
+            .circle:nth-of-type(2) {
+                img {
+                    height: 70px;
+                }
+            }
+           
+            .circle:nth-of-type(3) {
+                img {
+                    height: 90px;
+                }
+            }
+
+            .circle:nth-of-type(4) {
+                img {
+                    height: 80px;
+                }
+            }
+        }
+
+        #section__experienciaprofissional-rectangle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 170px;
+            width: 300px;
+            background-color: white;
+
+            border-top: 1px solid $mediumRed;
+            border-left: 1px solid $mediumRed;
+            border-right: 1px solid $mediumRed;
+            border-radius: 8px;
+            box-shadow: 8px 20px 20px 0px rgb(0 0 0 / 15%);
+        }
+    }
+
+}

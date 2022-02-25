@@ -1,0 +1,43 @@
+#section-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 1px solid $newGray;
+
+    aside {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        max-width: 1250px;
+
+        .all-cards {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            
+            height: 400px;
+            
+            .cards {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+
+                height: 180px;
+                margin-left: 50px;
+                text-align: center;
+
+                i {
+                    font-size: 80px;
+                }
+
+                span {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}

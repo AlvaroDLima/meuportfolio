@@ -1,0 +1,100 @@
+#section-projetos {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px;
+    justify-content: space-around;
+    
+    
+    background-color: $newGray;
+    border-top: 7px solid $lightRed;
+    
+    article {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        padding: 100px 0px;
+        height: inherit;
+        width: 100%;
+
+        iframe {
+            height: 600px;
+            width: 900px;
+
+            border-radius: 7px;
+            box-shadow: 1px 1px 7px rgba(51, 51, 51, 0.515);
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+
+            height: 450px;
+            width: 400px;
+            padding: 30px;
+
+            box-shadow: 1px 1px 5px #00000061;
+            border-radius: 13px;
+            border: 1px solid $mediumRed;
+            
+
+
+            h3 {
+                font-size: 40px;
+                font-weight: bolder;
+                background: -webkit-linear-gradient(#a5303a, #b34d49, #b54e4b);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            p {
+                color: white;
+            }
+
+            h4 {
+                color: $lightRed;
+            }
+
+            #btns {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+
+                align-self: center;
+
+                width: 220px;
+                height: 200px;
+                padding: 0px 20px;
+
+                transform: translateY(50px);
+
+                button {
+                    width: 200px;
+                    border: none;
+                    border-radius: 9px;
+                    padding: 15px 0px;
+                    cursor: pointer;
+
+                    &:nth-child(1) {
+                        color: white;
+                        background-color: $lightRed;
+
+                        &:hover {
+                            background-color: $mediumRed
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        background-color: $veryLightBlue;
+                        box-shadow: 4px 13px 17px #00000075;
+
+                        &:hover {
+                            background-color: #93a2c2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

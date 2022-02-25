@@ -1,0 +1,100 @@
+#section-hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    height: 650px;
+    
+
+    
+    
+    #section__hobbies-asides {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        width: 100%;
+
+       
+
+        aside:nth-of-type(1) {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+
+            padding: 20px;
+
+            background-color: $veryLightBlue;
+            box-shadow: inset 1px 0px 20px 0px rgb(105 105 105 / 22%);
+
+            height: 450px;
+            
+            .cards {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                
+                height: 60px;
+                width: 350px;
+                padding: 0px 50px;
+        
+                border-radius: 7px;
+                border: 1px solid $lightRed;
+                box-shadow: 8px 20px 20px 0px rgba(68, 68, 68, 0.15);
+                background-color: white;
+
+                .circle {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    height: 50px;
+                    width: 50px;
+
+                    border-radius: 100px;
+                    background-color: $veryLightBlue;
+
+                    
+                    i {
+                        font-size: 30px;
+                    }
+
+                    
+                }
+
+                span {
+                    text-align: center;
+                    font-size: 19px;
+                    width: 40%;
+                }
+            }
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            height: 450px;
+            width: 400px;
+            background-color: white;
+
+            h1 {
+                span {
+                    color: $lightRed;
+                }
+            }
+
+            button {
+                padding: 10px 20px;
+
+                background-color: $mediumRed;
+                border: none;
+                border-radius: 8px;
+            }
+        }
+    }
+    
+}

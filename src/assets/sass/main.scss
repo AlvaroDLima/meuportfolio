@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import 'colors';
+
+
+/*Animação Flutuante*/
+@keyframes floatAnimation {
+    0% {
+        filter:drop-shadow(3px 3px 15px rgba(0, 0, 0, 0.529));
+        transform: translatey(0px);
+    }
+
+    50% {
+        filter:drop-shadow(3px 23px 15px rgba(0, 0, 0, 0.529));
+        transform: translatey(-20px);
+    }
+
+    100% {
+        filter:drop-shadow(3px 3px 15px rgba(0, 0, 0, 0.529));
+        transform: translatey(0px);
+    }
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px auto 350px;
+    grid-template-areas: 
+    'header' 
+    'main' 
+    'footer';
+
+    font-family: sans-serif;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+
+
+   
+
+    
+
+    
+
+    
+
+    
+}
+
+footer {
+    grid-area: footer;
+}
+
