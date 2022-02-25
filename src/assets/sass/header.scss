@@ -12,8 +12,8 @@ header {
     width: 100%;
 
     transition: 0.6s;
-    background-color: #0000005e;
-    border-top: 2px solid $newLightYellow;
+    background-color: $newLightYellow;
+    border-top: 2px solid $newGray;
     box-sizing: border-box;
     border-bottom: 0.5px solid #ffffff69;
     z-index: 50;
@@ -29,15 +29,15 @@ header {
                 border-radius: 4px;
                 color: white;
                 text-decoration: none;
-                background: rgb(91 91 91 / 31%);
+                background: rgb(112 25 25);
                 padding: 10px 30px;
             }
                 
             a:hover {
-            background: rgba(255, 255, 255, 0.126);
-            color: rgb(255, 204, 0);
-            outline: 1px solid rgba(255, 238, 55, 0.311);
-            transition: .4s;
+                background: rgba(255, 255, 255, 0.126);
+                color: white;
+                outline: 1px solid rgba(255, 255, 255, 0.481);
+                transition: .4s;
             }
         }
     }
