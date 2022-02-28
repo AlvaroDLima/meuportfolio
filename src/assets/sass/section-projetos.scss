@@ -96,3 +96,10 @@
         }
     }
 }
+
+@media screen and (max-width: 1560px) {
+    #section-projetos article iframe {
+        height: 500px;
+        width: 400px;
+    }
+}
