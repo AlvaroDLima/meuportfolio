@@ -59,6 +59,10 @@ header {
 
 #nav-mobile {
     height: 0;
+
+    ul {
+        display: none;
+    }
 }
 
 .headerAnimation {
@@ -108,7 +112,6 @@ header {
         z-index: 100;
     
         ul {
-            display: flex;
             align-items: center;
             justify-content: space-evenly;
             flex-direction: column;

@@ -26,7 +26,9 @@ module.exports = {
       './src/assets/js/header.js',
       './src/assets/js/carrousel.js',
       './src/assets/js/jobs.js',
-      './src/assets/js/async-iframe.js'
+      './src/assets/js/async-iframe.js',
+      './src/assets/js/menuMobile.js'
+
     ],
 
   /**
