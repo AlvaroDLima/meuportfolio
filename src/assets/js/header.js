@@ -1,4 +1,7 @@
 let header = document.querySelector('header');
+const navMobile = document.createElement('nav')
+
+
 
 //ANIMATION
 const changeHeaderClass = () => {
@@ -6,8 +9,10 @@ const changeHeaderClass = () => {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 1) {
             header.classList.add('headerAnimation');
+            navMobile.style.marginTop = `${60}px`
         } else {
             header.classList.remove('headerAnimation');
+            navMobile.style.marginTop = `${80}px`
         }
     });
 }; changeHeaderClass();
@@ -18,32 +23,28 @@ const changeHeaderClass = () => {
 
 // MENU MOBILE
 const menuMobile = () => {
-    const displayWidth = document.querySelector('body').clientWidth
-    let nav = document.querySelector('header nav')
-    let btnHambur = document.createElement('button')
-    let ul = document.querySelector('nav ul')
+    const  ul = document.querySelector('#nav-widescreen ul')
+    const btnMobile = document.querySelector('#btn-mobile')
+    const copyMenu = ul.cloneNode(true);
 
-    btnHambur.innerHTML = '='
-    
-    if(displayWidth <= 1150) {
-        nav.insertAdjacentElement('afterbegin', btnHambur)
-    } else {
-        nav.style.display = 'flex';
-        ul.style.display = 'flex'
-    }
+    copyMenu.classList.add('ul-mobile')
+    navMobile.appendChild(copyMenu)
+    navMobile.setAttribute('id', 'nav-mobile')
 
-    let clicked = true
-    btnHambur.addEventListener('click', () => {
-        if(clicked) {
-            header.style.height = `${430}px`;
-            nav.style.display = 'flex';
-            ul.style.display = 'flex'
-            clicked = false
-        } else if (!clicked) {
-            header.style.height = `${80}px`;
-            ul.style.display = 'none'
+    header.insertAdjacentElement('afterend', navMobile)
+
+    let clicked = false
+    btnMobile.addEventListener('click', () => {
+
+        if (!clicked) {
+            navMobile.style.display = 'flex'
             clicked = true
+        } else {
+            navMobile.style.display = 'none'
+            clicked = false
         }
+       
+        
     })
 }
 
