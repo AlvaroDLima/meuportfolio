@@ -34,13 +34,16 @@ const menuMobile = () => {
     header.insertAdjacentElement('afterend', navMobile)
 
     let clicked = false
-    btnMobile.addEventListener('click', () => {
 
+    btnMobile.addEventListener('click', () => {
+        let ulMobile = document.querySelector('#nav-mobile ul')
         if (!clicked) {
-            navMobile.style.display = 'flex'
+            ulMobile.style.display = 'flex'
+            navMobile.style.height = `${400}px`
             clicked = true
         } else {
-            navMobile.style.display = 'none'
+            ulMobile.style.display = 'none'
+            navMobile.style.height = 0
             clicked = false
         }
        

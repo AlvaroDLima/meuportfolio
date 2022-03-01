@@ -58,7 +58,7 @@ header {
 }
 
 #nav-mobile {
-    display: none;
+    height: 0;
 }
 
 .headerAnimation {
@@ -74,6 +74,20 @@ header {
 
             #btn-mobile {
                 display: flex;
+                justify-content: center;
+                align-items: center
+                ;
+                width: 80px;
+
+                border: none;
+                border-radius: 4px;
+                background-color: $yellow1;
+                cursor: pointer;
+                font-size: 20px;
+
+                &:hover {
+                    background-color: #f2c06a;
+                }
             }
 
             ul {
@@ -85,7 +99,6 @@ header {
     #nav-mobile {
         align-items: center;
         justify-content: center;
-        height: 400px;
         width: 100%;
         margin-top: 80px;
     
