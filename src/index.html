@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
 
 </head>
 <body>
@@ -41,10 +42,9 @@
     </header>
     <main>
         <section id="section-apresentacao">
-            <article>
+            <article id="section-apresentacao-infos">
                 <h1>Olá, meu nome é Ramon Lopes</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicin, fugiat laboriosam ratione. </p>
-                
+                <p>Tenho 27 anos, atualmente estou cursando Análise e Desenvolvimento de Sistemas e, também, estudo em um curso Técnico em Desenvolvimento de Softwares. Tenho conhecimentos em Python, que foi a primeira linguagem que tive contato, posteriormente aprendi POO com Java na faculdade. Já desenvolvi alguns projetos com HTML5, CSS3 e Javascript. Atualmente pretendo me tornar desenvolvedor FULLSTACK com Javascript, focando no NodeJS. Estou na área de Desenvolvimento de Softwares há cerca de 1 ano</p>
                 <div id="div-links">
                     <ul>
                         <li>
@@ -71,13 +71,14 @@
                     </ul>
                 </div>
             </article>
-            <div>
+            <div id="section-apresentacao-img">
                 <img src="assets/images/img_others/boble.png" alt="foto-perfil">
-                <div data-aos="fade-out" data-aos-duration="10000">
+                <div id="text" data-aos="fade-out" data-aos-duration="10000">
                     <span>Desenvolvido por:</span>
                     <span>Ramon Lopes</span>
                     <span>Front End Developer</span>
                 </div>
+            </div>
         </section>
         
         <section id="section-sobre-mim">
@@ -268,8 +269,12 @@
         </section>
         <section id="section-projetos">
             <article>
-                <iframe remote src="https://nathandistribuidora.com.br/" frameborder="0" allowfullscreen></iframe>
-                <aside>
+                <div class="section-projetos-iframe">
+                    <div class="iframe-sobreposicao"></div>
+                    <iframe remote src="https://nathandistribuidora.com.br/" frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+                <aside class="section-projetos-descricao">
                     <h3>Nome Projeto</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem modi aliquam, quibusdam odit quisquam sunt dolorem debitis doloremque ad repellendus aut. Doloremque explicabo vel dolorum fugit ducimus veniam, quo quidem.</p>
                     <div id="tecnologias-utilizadas">
@@ -291,7 +296,7 @@
             </article>
             
             <article>
-                <aside>
+                <aside class="section-projetos-descricao">
                     <h3>Nome Projeto</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem modi aliquam, quibusdam odit quisquam sunt dolorem debitis doloremque ad repellendus aut. Doloremque explicabo vel dolorum fugit ducimus veniam, quo quidem.</p>
                     <div id="tecnologias-utilizadas">
@@ -310,12 +315,19 @@
                         <button>Ver demo</button>
                     </div>
                 </aside>
-                <iframe remote src="https://agrestech.com.br/" frameborder="0" allowfullscreen></iframe>
+                <div class="section-projetos-iframe">
+                    <div class="iframe-sobreposicao"></div>
+                    <iframe remote src="https://agrestech.com.br/" frameborder="0" allowfullscreen></iframe>
+                </div>
             </article>
             
             <article>
-                <iframe remote src="https://ramonlopz1.github.io/Challenge-Oracle-ONE-Parte-2/public/" frameborder="0" allowfullscreen></iframe>
-                <aside>
+                <div class="section-projetos-iframe">
+                    <div class="iframe-sobreposicao"></div>
+                    <iframe remote src="https://ramonlopz1.github.io/Challenge-Oracle-ONE-Parte-2/public/" frameborder="0" allowfullscreen></iframe>
+                </div>
+                
+                <aside class="section-projetos-descricao">
                     <h3>Nome Projeto</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem modi aliquam, quibusdam odit quisquam sunt dolorem debitis doloremque ad repellendus aut. Doloremque explicabo vel dolorum fugit ducimus veniam, quo quidem.</p>
                     <div id="tecnologias-utilizadas">
@@ -337,7 +349,7 @@
             </article>
             
             <article>
-                <aside>
+                <aside class="section-projetos-descricao">
                     <h3>Nome Projeto</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem modi aliquam, quibusdam odit quisquam sunt dolorem debitis doloremque ad repellendus aut. Doloremque explicabo vel dolorum fugit ducimus veniam, quo quidem.</p>
                     <div id="tecnologias-utilizadas">
@@ -356,7 +368,10 @@
                         <button>Ver demo</button>
                     </div>
                 </aside>
-                <iframe remote src="https://ramonlopz1.github.io/Challenge-Oracle-ONE/public/" frameborder="0" allowfullscreen></iframe>
+                <div class="section-projetos-iframe">
+                    <div class="iframe-sobreposicao"></div>
+                    <iframe remote src="https://ramonlopz1.github.io/Challenge-Oracle-ONE/public/" frameborder="0" allowfullscreen></iframe>
+                </div>
             </article>
         </section>
         

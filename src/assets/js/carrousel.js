@@ -1,6 +1,7 @@
 let firstDivCards = document.querySelector('#section-skills .all-cards:nth-of-type(1)');
 let secondDivCards = firstDivCards.cloneNode(true);
-document.querySelector('#section-skills aside').appendChild(secondDivCards);
+let aside = document.querySelector('#section-skills aside')
+    aside.appendChild(secondDivCards);
 
 let containerSize = firstDivCards.offsetWidth;
 let translateValue = 1;
@@ -18,6 +19,12 @@ function carrousel() {
         }
 }
 
-setInterval(() => {
-    carrousel();
-}, 7);
+let refreshInterval = ""
+
+aside.addEventListener('mouseenter', () => {
+    refreshInterval = setInterval(carrousel, 7)
+})
+
+aside.addEventListener('mouseleave', () => {
+    clearInterval(refreshInterval)
+})

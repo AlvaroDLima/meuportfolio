@@ -2,23 +2,25 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
-    height: 520px;
+    padding: 50px;
     z-index: 10;
 
-    article {
+    #section-apresentacao-infos {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        
+        width: 50%;
+
         h1 {
             font-family: "Gemunu Libre", sans-serif;
             font-size: 60px;
         }
 
         p {
+            
             font-size: 23px;
         }
 
@@ -80,8 +82,9 @@
                 justify-content: center;
 
                 border-radius: 4px;
-                padding: 4px 20px;
+                padding: 10px 40px;
 
+                font-size: 20px;
                 background-color: $blue3;
                 font-weight: bold;
                 color: rgb(255, 255, 255);
@@ -97,11 +100,10 @@
                 }
             
             }
-            
         }
     }
 
-    div {
+    #section-apresentacao-img {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -115,29 +117,41 @@
             margin-bottom: 20px;
         }
 
-        span:nth-child(1) {
-            font-size: 15px;
-            font-family: 'Gemunu Libre', sans-serif;
+        div {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            span:nth-child(1) {
+                font-size: 15px;
+                font-family: 'Gemunu Libre', sans-serif;
+            }
+    
+            span:nth-child(2) {
+                font-size: 26px;
+            }
+    
+    
+            span:nth-child(3) {
+                color: $blue3;
+                font-family: 'Gemunu Libre', sans-serif;
+                font-size: 45px;
+                font-weight: bolder;
+            }
         }
-
-        span:nth-child(2) {
-            font-size: 26px;
-        }
-
-
-        span:nth-child(3) {
-            color: $blue3;
-            font-family: 'Gemunu Libre', sans-serif;
-            font-size: 45px;
-            font-weight: bolder;
-        }
-
     }
-
 }
 
-@media screen and (max-width: 1560px) {
+@media screen and (max-width: 1270px) {
     #section-apresentacao {
-      
+      flex-direction: column;
+
+        #section-apresentacao-infos {
+            margin-bottom: 50px;
+
+            h1 {
+                font-size: 45px;
+            }
+        }
     }
 }

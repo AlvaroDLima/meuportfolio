@@ -1,6 +1,6 @@
 #section-sobre-mim {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
 
@@ -8,19 +8,18 @@
 
     background-color: $yellow1;
 
-    h2 {
-        color: white;
-        font-size: 37px;
-        text-shadow: 1px 1px 5px rgba(46, 46, 46, 0.508);
-    }
-
-    p {
-        font-size: 26px;
-    }
-
     article {
-        padding-left: 330px;
         width: 60%;
         text-align: justify;
+
+        h2 {
+            color: white;
+            font-size: 37px;
+            text-shadow: 1px 1px 5px rgba(46, 46, 46, 0.508);
+        }
+    
+        p {
+            font-size: 26px;
+        }
     }
 }

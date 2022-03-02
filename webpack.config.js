@@ -23,12 +23,12 @@ module.exports = {
   entry: [
       './src/main.js', 
       './src/assets/js/script.js', 
-      './src/assets/js/header.js',
+      './src/assets/js/headerAnimation.js',
       './src/assets/js/carrousel.js',
       './src/assets/js/jobs.js',
-      './src/assets/js/async-iframe.js',
-      './src/assets/js/menuMobile.js'
-
+      './src/assets/js/asyncIframe.js',
+      './src/assets/js/menuMobile.js',
+      './src/assets/js/iframeAnimation.js'
     ],
 
   /**

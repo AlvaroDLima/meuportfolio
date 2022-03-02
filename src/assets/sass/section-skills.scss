@@ -6,7 +6,6 @@
 
     border-bottom: 1px solid $newGray;
 
-
     aside {
         display: flex;
         flex-direction: row;
@@ -40,5 +39,11 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    #section-skills aside {
+        max-width: 800px;
     }
 }
