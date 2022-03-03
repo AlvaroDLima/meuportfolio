@@ -74,6 +74,7 @@
             flex-direction: column;
             align-items: flex-start;
 
+            margin-left: 10px;
             width: 400px;
             background-color: white;
 
@@ -119,6 +120,47 @@
 
             h1 {
                 font-size: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 790px) {
+    #section-hobbies {
+        #section__hobbies-asides {
+            flex-direction: column-reverse;
+            aside {
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                height: 240px;
+                width: 450px;
+
+                .cards {
+                    width: 110px;
+                    
+                    .circle {
+                        height: 40px;
+                        width: 40px;
+
+                        i {
+                            font-size: 23px;
+                        }
+                    }
+
+                    span {
+                        font-size: 20px;
+                        width: 80%;
+                    }
+                }
+            }
+    
+            article {
+                margin-bottom: 50px;
+
+                h1 {
+                    font-size: 35px;
+                }
             }
         }
     }

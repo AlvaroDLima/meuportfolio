@@ -150,3 +150,37 @@
         }
     }
 }
+
+@media screen and(max-width: 540px) {
+    #section-contato {
+        article {
+            flex-direction: column-reverse;
+            width: 350px;
+
+            form {
+                input:not([type=checkbox]) {
+                    &:not([type=submit], [type=checkbox]) {
+                        width: 95%;
+    
+                    }
+                }
+
+                textarea {
+                    width: 95%;
+                }
+            }
+
+            aside {
+                width: inherit;
+
+                img {
+                    width: 280px;
+                }
+                
+                #section-contato-outrasopcoes {
+                    width: 0px;
+                }
+            }
+        }
+    }
+}
