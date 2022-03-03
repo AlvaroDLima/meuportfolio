@@ -42,8 +42,20 @@
     }
 }
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1330px) {
     #section-skills aside {
         max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    #section-skills aside {
+        max-width: 515px;
+
+        .all-cards {
+            .cards img {
+                height: 50px;
+            }
+        }
     }
 }

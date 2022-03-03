@@ -296,6 +296,10 @@
             </article>
             
             <article>
+                <div class="section-projetos-iframe">
+                    <div class="iframe-sobreposicao"></div>
+                    <iframe remote src="https://agrestech.com.br/" frameborder="0" allowfullscreen></iframe>
+                </div>
                 <aside class="section-projetos-descricao">
                     <h3>Nome Projeto</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem modi aliquam, quibusdam odit quisquam sunt dolorem debitis doloremque ad repellendus aut. Doloremque explicabo vel dolorum fugit ducimus veniam, quo quidem.</p>
@@ -315,10 +319,6 @@
                         <button>Ver demo</button>
                     </div>
                 </aside>
-                <div class="section-projetos-iframe">
-                    <div class="iframe-sobreposicao"></div>
-                    <iframe remote src="https://agrestech.com.br/" frameborder="0" allowfullscreen></iframe>
-                </div>
             </article>
             
             <article>
@@ -326,7 +326,6 @@
                     <div class="iframe-sobreposicao"></div>
                     <iframe remote src="https://ramonlopz1.github.io/Challenge-Oracle-ONE-Parte-2/public/" frameborder="0" allowfullscreen></iframe>
                 </div>
-                
                 <aside class="section-projetos-descricao">
                     <h3>Nome Projeto</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem modi aliquam, quibusdam odit quisquam sunt dolorem debitis doloremque ad repellendus aut. Doloremque explicabo vel dolorum fugit ducimus veniam, quo quidem.</p>
@@ -346,32 +345,34 @@
                         <button>Ver demo</button>
                     </div>
                 </aside>
+
             </article>
             
             <article>
-                <aside class="section-projetos-descricao">
-                    <h3>Nome Projeto</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem modi aliquam, quibusdam odit quisquam sunt dolorem debitis doloremque ad repellendus aut. Doloremque explicabo vel dolorum fugit ducimus veniam, quo quidem.</p>
-                    <div id="tecnologias-utilizadas">
-                        <h4>Tecnologias Utilziadas</h4>
-                            <img src="https://cdn.cdnlogo.com/logos/h/84/html.svg" alt="html5" height="30px">
-                            <img src="https://cdn.cdnlogo.com/logos/c/18/css.svg" alt="html5" height="30px">
-                            <img src="https://cdn.cdnlogo.com/logos/s/90/sass.svg" alt="html5" height="30px">
-                            <img src="https://cdn.cdnlogo.com/logos/j/69/javascript.svg" alt="html5" height="30px">
-                            <img src="https://cdn.cdnlogo.com/logos/n/94/nodejs-icon.svg" alt="html5" height="30px">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/1024px-Github-desktop-logo-symbol.svg.png" alt="html5" height="30px">
-                        </div>
-                    </div>
-
-                    <div id="btns">
-                        <button>Repositório</button>
-                        <button>Ver demo</button>
-                    </div>
-                </aside>
                 <div class="section-projetos-iframe">
                     <div class="iframe-sobreposicao"></div>
                     <iframe remote src="https://ramonlopz1.github.io/Challenge-Oracle-ONE/public/" frameborder="0" allowfullscreen></iframe>
                 </div>
+                <aside class="section-projetos-descricao">
+                    <h3>Nome Projeto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem modi aliquam, quibusdam odit quisquam sunt dolorem debitis doloremque ad repellendus aut. Doloremque explicabo vel dolorum fugit ducimus veniam, quo quidem.</p>
+                    <div id="tecnologias-utilizadas">
+                        <h4>Tecnologias Utilziadas</h4>
+                            <img src="https://cdn.cdnlogo.com/logos/h/84/html.svg" alt="html5" height="30px">
+                            <img src="https://cdn.cdnlogo.com/logos/c/18/css.svg" alt="html5" height="30px">
+                            <img src="https://cdn.cdnlogo.com/logos/s/90/sass.svg" alt="html5" height="30px">
+                            <img src="https://cdn.cdnlogo.com/logos/j/69/javascript.svg" alt="html5" height="30px">
+                            <img src="https://cdn.cdnlogo.com/logos/n/94/nodejs-icon.svg" alt="html5" height="30px">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/1024px-Github-desktop-logo-symbol.svg.png" alt="html5" height="30px">
+                        </div>
+                    </div>
+
+                    <div id="btns">
+                        <button>Repositório</button>
+                        <button>Ver demo</button>
+                    </div>
+                </aside>
+
             </article>
         </section>
         
@@ -390,8 +391,11 @@
                 
                         <textarea name="texto" cols="30" rows="10" placeholder="Digite a sua mensagem" required></textarea>
                 
-                        <div>
-                            <span>Termos de uso</span> <input type="checkbox" name="aceita-termos" id="section__contato-termos">
+                        <div id="section__contato-termos">
+                            <span>
+                                Aceito os <a href="">Termos de uso</a>.
+                            </span>
+                            <input type="checkbox" name="aceita-termos">
                         </div>
                         <input type="submit" value="Enviar mensagem">
                 </form>
@@ -402,19 +406,23 @@
                             <div class="circle">
                                 <i class="fa-solid fa-map-location-dot"></i>
                             </div>
-                            <span>Texto a ser inserido</span>
+                            <span>
+                                <address>
+                                    <a href="https://goo.gl/maps/PhuKqnHr2WUV4FZBA" target="_blank" rel="googlemaps">Pesqueira, PE, Brasil</a>
+                                </address>
+                            </span>
                         </div>
                         <div class="cards">
                             <div class="circle">
                                 <i class="fa-solid fa-phone-volume"></i>
                             </div>
-                            <span>Texto a ser inserido</span>
+                            <span><a href="tel:87991309869">(87) 9 9130-9869</a></span>
                         </div>
                         <div class="cards">
                             <div class="circle">
                                 <i class="fa-solid fa-envelopes-bulk"></i>
                             </div>
-                            <span>Texto a ser inserido</span>
+                            <span><a href="mailto:rmnprojetos@outlook.com">rmnprojetos@outlook.com</a></span>
                         </div>
                     </div>
                 </aside>
