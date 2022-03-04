@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import 'colors';
 
+html {
+    scroll-behavior: smooth;
+}
 
 /*Animação Flutuante*/
 @keyframes floatAnimation {

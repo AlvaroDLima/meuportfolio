@@ -15,24 +15,47 @@ let clicked = false;
 
 
 // CHANGE CSS PARAMETERS
-function animateCSS(btn, index, display, rotate, width, radius, justContent, addDiv) {
+function animateCSS(btn, index, display, rotate, addDiv, addClass) {
     btn.style.transform = `rotate(${rotate}deg)`;
     
     currentCard = cards[index];
-    currentCard.style.width = `${width}px`;
-    currentCard.style.borderRadius = `${radius}px`;
-    currentCard.style.justifyContent = justContent;
-    
 
-    addDiv == true ? currentCard.appendChild(newDiv) : newDiv.remove();
+    if(addDiv) {
+        currentCard.appendChild(newDiv)
+        currentCard.classList.add('rectangle')
+    } else {
+        newDiv.remove()
+        currentCard.classList.remove('rectangle')
+    } 
         
 
-    if(currentCard.hasAttribute('fst')) {
-        newTitle.innerHTML = '2018 - 2020';
-        newParagraph.innerHTML = 'Controle/elaboração de Dashboards no software EXCEL, relatórios de estatísticas de vendas, faturamento e despesas mensais, gerenciamento no software DataWeb.';
-        newDiv.appendChild(newTitle);
-        newDiv.appendChild(newParagraph);
-    }
+    setTimeout(() => {
+        if (currentCard.hasAttribute('fst')) {
+            newDiv.appendChild(newTitle);
+            newDiv.appendChild(newParagraph);
+            newTitle.innerHTML = '2015 - 2016';
+            newParagraph.innerHTML = 'Correspondente da IV GERES da Secretaria Estadual de Saúde de Pernambuco, gerenciamento no software E-SUS, desenvolvedor de Dashboards no software EXCEL, consultor nos sites CMCE e APACNET. Gestão de vagas da fila do SUS.';
+
+        } else if (currentCard.hasAttribute('scnd')) {
+            newDiv.appendChild(newTitle);
+            newDiv.appendChild(newParagraph);
+            newTitle.innerHTML = '2015 - 2016';
+            newParagraph.innerHTML = 'Desenvolvimento de projetos arquitetônicos no software AutoCAD, supervisão de serviços em campo, criação planilhas e Dashboards software EXCEL.';
+
+        } else if (currentCard.hasAttribute('thrd')) {
+            newDiv.appendChild(newTitle);
+            newDiv.appendChild(newParagraph);
+            newTitle.innerHTML = '2018 - 2020';
+            newParagraph.innerHTML = 'Controle/elaboração de Dashboards no software EXCEL, contas a pagar, relatórios de estatísticas de vendas, faturamento e despesas mensais, gerenciamento no software DataWeb.';
+
+        } else {
+            newDiv.appendChild(newTitle);
+            newDiv.appendChild(newParagraph);
+            newTitle.innerHTML = '2020 - 2022';
+            newParagraph.innerHTML = 'Responsável pela precificação de produtos das empresas do grupo, desenvolvedor web, marketing digital, elaboração de reuniões mensais, elaboração e levantamento de relatórios de dados estatísticos gerais.';
+        }
+
+    }, 600)
 
     cards.forEach(card => {
         if(card != currentCard) 
@@ -44,11 +67,11 @@ function animateCSS(btn, index, display, rotate, width, radius, justContent, add
 // BTNS CLICK EVENT TO EXECUTE FUNCTIONS
 btns.forEach((btn, index) => {
     btn.onclick = () => {
-        if(!clicked) {
-            animateCSS(btn, index, 'none', 180, 600, 6, 'space-evenly', true);
+        if (!clicked) {
+            animateCSS(btn, index, 'none', 180, true);
             clicked = true
-        } else if (clicked == true) {
-            animateCSS(btn, index, 'flex', 360, 100, 100, 'center', false);
+        } else if (clicked) {
+            animateCSS(btn, index, 'flex', 360, false);
             clicked = false
         }
     }

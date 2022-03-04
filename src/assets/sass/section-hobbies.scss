@@ -165,3 +165,37 @@
         }
     }
 }
+
+@media screen and (max-width: 790px) {
+    #section-hobbies {
+        #section__hobbies-asides {
+            aside {
+                height: 240px;
+                width: 320px;
+
+                .cards {
+                    width: 130px;
+                    padding: 0px 8px;
+                    
+                    .circle {
+    
+                    }
+
+                    span {
+                        font-size: 18px;
+                    }
+                }
+            }
+    
+            article {
+                margin-bottom: 50px;
+                margin-left: 0;
+                width: 320px;
+
+                h1 {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}

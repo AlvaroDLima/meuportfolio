@@ -220,6 +220,8 @@
                 transform: translateY(0px);
                 
                 padding: 0px;
+                margin: 20px 0px;
+
                 button {
                     width: 140px;
                     
@@ -252,6 +254,29 @@
         .section-projetos-descricao {
             height: 350px;
             width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 610px) {
+    #section-projetos article {
+        .section-projetos-iframe {
+            height: 600px;
+            width: 300px;
+
+            .iframe-sobreposicao {
+                width: 300px;
+            }
+
+            iframe {
+                width: 300px;
+            }
+        }
+
+
+        .section-projetos-descricao {
+            height: 400px;
+            width: 300px;
         }
     }
 }

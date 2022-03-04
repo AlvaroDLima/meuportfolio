@@ -30,3 +30,7 @@ const menuMobile = () => {
 }
 
 menuMobile()
+
+
+//ANIMATION
+
