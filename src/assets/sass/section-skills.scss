@@ -6,67 +6,109 @@
 
     border-bottom: 1px solid $newGray;
 
-    aside {
+    article {
         display: flex;
+        align-items: center;
         flex-direction: row;
-        overflow: hidden;
-        max-width: 1250px;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: 30px;
 
-        .all-cards {
+        .section-skills-btn {
             display: flex;
+            justify-content: center;
             align-items: center;
-            justify-content: space-between;
-            flex-wrap: nowrap;
-            
-            height: 400px;
-            
-            .cards {
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                flex-direction: column;
 
-                height: 180px;
-                margin-left: 50px;
-                text-align: center;
+            background: none;
+            border-radius: 100px;
+            border: none;
+            cursor: pointer;
 
-                i {
-                    font-size: 80px;
-                }
+            height: 50px;
+            width: 50px;
 
-                span {
-                    font-size: 25px;
+            i {
+                color: $blue3;
+                font-size: 45px;
+
+                &:hover {
+                    color: $blue1;
                 }
             }
         }
+
+        aside {
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            max-width: 980px;
+    
+            .all-cards {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                
+                height: 400px;
+                transition: .6s;
+                gap: 50px;
+                
+                .cards {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    flex-direction: column;
+    
+                    height: 180px;
+                    
+                    text-align: center;
+    
+                    i {
+                        font-size: 80px;
+                    }
+    
+                    span {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+
+
     }
 }
 
 @media screen and (max-width: 1330px) {
-    #section-skills aside {
+    #section-skills article aside {
         max-width: 800px;
     }
 }
 
 @media screen and (max-width: 930px) {
-    #section-skills aside {
+    #section-skills article aside {
         max-width: 515px;
 
         .all-cards {
             .cards img {
-                height: 50px;
+                height: 70px;
             }
         }
     }
 }
 
-@media screen and (max-width: 575px) {
-    #section-skills aside {
+@media screen and (max-width: 775px) {
+    #section-skills article aside {
         max-width: 315px;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    #section-skills article aside {
+        max-width: 215px;
 
         .all-cards {
             .cards img {
-                height: 40px;
+                height: 80px;
             }
         }
     }
