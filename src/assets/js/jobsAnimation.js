@@ -21,41 +21,41 @@ function animateCSS(btn, index, display, rotate, addDiv, addClass) {
     currentCard = cards[index];
 
     if(addDiv) {
-        currentCard.appendChild(newDiv)
+        
+        setTimeout(() => {
+            currentCard.appendChild(newDiv)
+        }, 300)
+
         currentCard.classList.add('rectangle')
     } else {
         newDiv.remove()
         currentCard.classList.remove('rectangle')
     } 
-        
+    
+    if (currentCard.hasAttribute('fst')) {
+        newDiv.appendChild(newTitle);
+        newDiv.appendChild(newParagraph);
+        newTitle.innerHTML = '2015 - 2016';
+        newParagraph.innerHTML = 'Correspondente da IV GERES da Secretaria Estadual de Saúde de Pernambuco, gerenciamento no software E-SUS, desenvolvedor de Dashboards no software EXCEL, consultor nos sites CMCE e APACNET. Gestão de vagas da fila do SUS.';
 
-    setTimeout(() => {
-        if (currentCard.hasAttribute('fst')) {
-            newDiv.appendChild(newTitle);
-            newDiv.appendChild(newParagraph);
-            newTitle.innerHTML = '2015 - 2016';
-            newParagraph.innerHTML = 'Correspondente da IV GERES da Secretaria Estadual de Saúde de Pernambuco, gerenciamento no software E-SUS, desenvolvedor de Dashboards no software EXCEL, consultor nos sites CMCE e APACNET. Gestão de vagas da fila do SUS.';
+    } else if (currentCard.hasAttribute('scnd')) {
+        newDiv.appendChild(newTitle);
+        newDiv.appendChild(newParagraph);
+        newTitle.innerHTML = '2015 - 2016';
+        newParagraph.innerHTML = 'Desenvolvimento de projetos arquitetônicos no software AutoCAD, supervisão de serviços em campo, criação planilhas e Dashboards software EXCEL.';
 
-        } else if (currentCard.hasAttribute('scnd')) {
-            newDiv.appendChild(newTitle);
-            newDiv.appendChild(newParagraph);
-            newTitle.innerHTML = '2015 - 2016';
-            newParagraph.innerHTML = 'Desenvolvimento de projetos arquitetônicos no software AutoCAD, supervisão de serviços em campo, criação planilhas e Dashboards software EXCEL.';
+    } else if (currentCard.hasAttribute('thrd')) {
+        newDiv.appendChild(newTitle);
+        newDiv.appendChild(newParagraph);
+        newTitle.innerHTML = '2018 - 2020';
+        newParagraph.innerHTML = 'Controle/elaboração de Dashboards no software EXCEL, contas a pagar, relatórios de estatísticas de vendas, faturamento e despesas mensais, gerenciamento no software DataWeb.';
 
-        } else if (currentCard.hasAttribute('thrd')) {
-            newDiv.appendChild(newTitle);
-            newDiv.appendChild(newParagraph);
-            newTitle.innerHTML = '2018 - 2020';
-            newParagraph.innerHTML = 'Controle/elaboração de Dashboards no software EXCEL, contas a pagar, relatórios de estatísticas de vendas, faturamento e despesas mensais, gerenciamento no software DataWeb.';
-
-        } else {
-            newDiv.appendChild(newTitle);
-            newDiv.appendChild(newParagraph);
-            newTitle.innerHTML = '2020 - 2022';
-            newParagraph.innerHTML = 'Responsável pela precificação de produtos das empresas do grupo, desenvolvedor web, marketing digital, elaboração de reuniões mensais, elaboração e levantamento de relatórios de dados estatísticos gerais.';
-        }
-
-    }, 600)
+    } else {
+        newDiv.appendChild(newTitle);
+        newDiv.appendChild(newParagraph);
+        newTitle.innerHTML = '2020 - 2022';
+        newParagraph.innerHTML = 'Responsável pela precificação de produtos das empresas do grupo, desenvolvedor web, marketing digital, elaboração de reuniões mensais, elaboração e levantamento de relatórios de dados estatísticos gerais.';
+    }
 
     cards.forEach(card => {
         if(card != currentCard) 

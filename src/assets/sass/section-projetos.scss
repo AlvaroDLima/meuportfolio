@@ -19,7 +19,7 @@
             border-top: 1px solid rgba(255, 255, 255, 0.186);
         }
 
-        .section-projetos-iframe {  
+        .section-projetos-imgs {  
             height: 510px;
             width: 800px;
             padding: 30px;
@@ -29,7 +29,7 @@
             border: 1px solid $yellow1;
             
 
-            .iframe-sobreposicao {
+            .img-sobreposicao {
                 position: absolute;
 
                 height: inherit;
@@ -46,7 +46,7 @@
                 }
             }
 
-            iframe {
+            img {
                 height: inherit;
                 width: inherit;
                 border-radius: 7px;
@@ -141,15 +141,15 @@
         justify-content: center;
         flex-direction: column;
 
-        .section-projetos-iframe {
+        .section-projetos-imgs {
             border-bottom: none;
             border-radius: 13px 13px 0px 0px;
 
-            .iframe-sobreposicao {
+            .img-sobreposicao {
 
             }
 
-            iframe {
+            img {
 
             }
         }
@@ -188,17 +188,17 @@
         justify-content: center;
         flex-direction: column;
 
-        .section-projetos-iframe {
+        .section-projetos-imgs {
             border-bottom: none;
             border-radius: 13px 13px 0px 0px;
             height: 700px;
             width: 500px;
 
-            .iframe-sobreposicao {
+            .img-sobreposicao {
                 width: 500px;
             }
 
-            iframe {
+            img {
                 width: 500px;
             }
         }
@@ -237,15 +237,15 @@
 
 @media screen and (max-width: 610px) {
     #section-projetos article {
-        .section-projetos-iframe {
+        .section-projetos-imgs {
             height: 600px;
             width: 350px;
 
-            .iframe-sobreposicao {
+            .img-sobreposicao {
                 width: 350px;
             }
 
-            iframe {
+            img {
                 width: 350px;
             }
         }
@@ -260,15 +260,15 @@
 
 @media screen and (max-width: 610px) {
     #section-projetos article {
-        .section-projetos-iframe {
+        .section-projetos-imgs {
             height: 600px;
             width: 300px;
 
-            .iframe-sobreposicao {
+            .img-sobreposicao {
                 width: 300px;
             }
 
-            iframe {
+            img {
                 width: 300px;
             }
         }

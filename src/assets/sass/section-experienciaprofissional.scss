@@ -48,34 +48,7 @@
                     align-items: center;
                 }
 
-                .newDivJS {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-
-                    text-align: center;
-                    transition: .6s;
-
-                    height: 110px;
-                    width: 400px;
-                    padding: 5px 15px;
-
-                   
-                    border-radius: 7px;
-                    border: 1px solid $blue2;
-
-                    h3 {
-                        margin: 0;
-                    }
-
-                    p {
-                        margin: 0;
-                        font-weight: bold;
-                        font-size: 18px;
-                    }
-                }
-
+                
                 button {
                     display: flex;
 
@@ -130,6 +103,36 @@
                 border-radius: 6px;
                 justify-content: space-evenly;
                 transition: .6s;
+
+                .newDivJS {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    transition: .6s;
+                    text-align: center;
+                    
+
+                    height: 110px;
+                    width: 400px;
+                    padding: 5px 15px;
+
+                   
+                    border-radius: 7px;
+                    border: 1px solid $blue2;
+
+                    h3 {
+                        margin: 0;
+                    }
+
+                    p {
+                        margin: 0;
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+                }
+
             }
         }
     }
