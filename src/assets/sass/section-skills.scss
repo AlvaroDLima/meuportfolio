@@ -60,6 +60,7 @@
                     flex-direction: column;
     
                     height: 180px;
+                    width: 120px;
                     
                     text-align: center;
     
@@ -88,11 +89,6 @@
     #section-skills article aside {
         max-width: 635px;
 
-        .all-cards {
-            .cards img {
-                height: 70px;
-            }
-        }
     }
 }
 
@@ -106,10 +102,5 @@
     #section-skills article aside {
         max-width: 215px;
 
-        .all-cards {
-            .cards img {
-                height: 80px;
-            }
-        }
     }
 }
