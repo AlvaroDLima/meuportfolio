@@ -79,6 +79,9 @@ module.exports = {
             }, {
               from: './src/assets/js/smtp.js',
               to: path.resolve(__dirname, 'public/assets/js')
+            }, {
+              from: './src/assets/resume',
+              to: path.resolve(__dirname, 'public/assets/resume')
             }
           ]
       })

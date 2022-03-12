@@ -104,6 +104,7 @@
                 transform: translateY(70px);
 
                 a {
+
                     padding: 15px 0px;
                     margin-bottom: 10px;
                     width: 200px;
@@ -112,6 +113,10 @@
                     border: none;
                     border-radius: 9px;
                     cursor: pointer;
+                    color: white;
+                    font-size: 23px;
+                    text-align: center;
+                    text-decoration: none;
 
                     &:nth-child(1) {
                         color: white;
