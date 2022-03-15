@@ -409,7 +409,7 @@
                         <input type="email" name="email" placeholder="email@host.com.br" class="email" required>
                 
                         <label for="assunto">Assunto</label>
-                        <input type="text" name="assunto" placeholder="Tipo de assunto" required>
+                        <input type="text" name="assunto" placeholder="Tipo de assunto" class="assunto" required>
                 
                         <textarea name="texto" cols="30" rows="10" placeholder="Digite a sua mensagem"  class="message" id="message" required></textarea>
                 
@@ -474,24 +474,20 @@
             <span>Developed By Ramon Lopes</span>
         </div>
     </footer>
+    
     <script src="assets/js/main.js"></script>
 
+    <!--FONT AWESOME ICONS-->
     <script src="https://kit.fontawesome.com/4df89de1f1.js" crossorigin="anonymous"></script>
 
+    <!--AOS ANIMATIONS-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 
-    
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("45q8BhMYFYZgDjwWv");
-            })();
-    </script>
+    <!--SEND EMAIL-->>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="assets/js/smtp.js"></script>
-
-
 </body>
 </html>
