@@ -1,13 +1,11 @@
-const initializeApp = require("https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js")
-
-const firebaseConfig = {
-  apiKey: "AIzaSyA3Erx2teApzsW1ZjUmcwtlYizLCLKQO78",
-  authDomain: "meuportfolio-fd9cc.firebaseapp.com",
-  projectId: "meuportfolio-fd9cc",
-  storageBucket: "meuportfolio-fd9cc.appspot.com",
-  messagingSenderId: "809926208032",
-  appId: "1:809926208032:web:2dbc1765051bbe9271aa45",
-  measurementId: "G-X69CP9VE4T"
+let firebaseConfig = {
+  apiKey: "AIzaSyB6Izsku_qLcnr9lc0Ivj5eejB7-5FCaRE",
+  authDomain: "test-form-d3492.firebaseapp.com",
+  databaseURL: "https://test-form-d3492.firebaseio.com",
+  projectId: "test-form-d3492",
+  storageBucket: "test-form-d3492.appspot.com",
+  messagingSenderId: "222398070278",
+  appId: "1:222398070278:web:bf51f5c8a26dcfff9ecd87",
 };
 
 // Initialize Firebase
@@ -17,9 +15,11 @@ const app = initializeApp(firebaseConfig);
 let contactInfo = app.database().ref("infos");
 
 // Listen for a submit
-document.querySelector(".contact-form").addEventListener("submit", submitForm);
+document.querySelector(".contact-form button").addEventListener("click", submitForm);
+
 
 function submitForm(e) {
+  
   e.preventDefault();
 
   //   Get input Values
@@ -51,7 +51,7 @@ function sendEmail(name, email, message) {
     Password: "wjnjbfvmydpojopd",
     To: "rmnprojetos@gmail.com",
     From: 'rmnprojetos@gmail.com',
-    Subject: `CONTATO - SITE AGRESTECH`,
+    Subject: `CONTATO - MEU PORTFÓLIO`,
     Body: `Name; ${name} <br/> Email: ${email} <br/> Mensagem: ${message}`
   }).then((message) => alert("Mensagem enviada com Sucesso"))
 }

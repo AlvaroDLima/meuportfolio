@@ -92,7 +92,7 @@
                     Adipisci hic ut iste velit doloribus quam voluptatum dolorem. Lorem, ipsum dolor sit amet consectetur adipisicin, fugiat laboriosam ratione.
                     Eius reiciendis dolore corporis neque quisquam incidunt quos quaerat et sunt reprehenderit. Ipsam!
                 </p>
-                <img src="" alt="assinatura">
+                <img src="assets/images/img_others/img-assinatura.png" alt="assinatura" height="90px">
             </article>
         </section>
 
@@ -401,17 +401,17 @@
         <section id="section-contato"> 
             <h1>Contato</h1>    
             <article>
-                <form action="">
+                <form class="contact-form">
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                        <input type="text" name="nome" id="nome" placeholder="Nome completo" class="name" required >
                 
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="email@host.com.br" required>
+                        <input type="email" name="email" id="email" placeholder="email@host.com.br" class="email" required>
                 
                         <label for="assunto">Assunto</label>
                         <input type="text" name="assunto" id="assunto" placeholder="Tipo de assunto" required>
                 
-                        <textarea name="texto" cols="30" rows="10" placeholder="Digite a sua mensagem" required></textarea>
+                        <textarea name="texto" cols="30" rows="10" placeholder="Digite a sua mensagem"  class="message" required></textarea>
                 
                         <div id="section__contato-termos">
                             <span>
@@ -419,7 +419,7 @@
                             </span>
                             <input type="checkbox" name="aceita-termos">
                         </div>
-                        <input type="submit" value="Enviar mensagem">
+                        <button type="submit">Enviar Mensagem</button>
                 </form>
                 <aside>
                     <img src="assets/images/img_others/img-email.png" alt="img-email" width="400px">
@@ -474,20 +474,17 @@
             <span>Developed By Ramon Lopes</span>
         </div>
     </footer>
-    
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
-    
-
-    <script src="assets/js/main.js"></script>
 
     <script src="https://kit.fontawesome.com/4df89de1f1.js" crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
-
-   
   </script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+<script src="assets/js/smtp.js"></script>
+
 </body>
 </html>
