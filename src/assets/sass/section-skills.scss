@@ -56,18 +56,23 @@
                 .cards {
                     display: flex;
                     align-items: center;
-                    justify-content: space-evenly;
+                    justify-content: space-between;
                     flex-direction: column;
     
-                    height: 180px;
+                    height: 150px;
                     width: 120px;
                     
                     text-align: center;
-    
-                    i {
-                        font-size: 80px;
+
+                    .cards-img-container {
+                        display: flex;
+                        height: 90px;
+                        
+                        img {
+                            align-self: center;
+                        }
                     }
-    
+
                     span {
                         font-size: 25px;
                     }

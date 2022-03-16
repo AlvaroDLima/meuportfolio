@@ -26,5 +26,5 @@ document.querySelector(".contact-form").addEventListener("submit", submitForm);
             Email: ${email} <br/> 
             Assunto: ${assunto} <br/> 
             Mensagem: ${message}`
-    }).then((message) => alert("Mensagem enviada com Sucesso"))
+    }).then((message) => alert("Mensagem enviada com sucesso."))
   }
