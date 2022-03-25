@@ -10,22 +10,34 @@ const menuMobile = () => {
     navMobile.appendChild(copyMenu)
     navMobile.setAttribute('id', 'nav-mobile')
 
+    
     header.insertAdjacentElement('afterend', navMobile)
+    const links = document.querySelectorAll('#nav-mobile .ul-mobile li a')
 
     let clicked = false
 
-    btnMobile.addEventListener('click', () => {
+    function openClose() {
         let ulMobile = document.querySelector('#nav-mobile ul')
-        
-        if (!clicked) {
-            ulMobile.style.display = 'flex'
-            navMobile.style.height = `${400}px`
-            clicked = true
-        } else {
-            ulMobile.style.display = 'none'
-            navMobile.style.height = 0
-            clicked = false
-        }
+            
+            if (!clicked) {
+                ulMobile.style.display = 'flex'
+                navMobile.style.height = `${100}%`
+                clicked = true
+            } else {
+                ulMobile.style.display = 'none'
+                navMobile.style.height = 0
+                clicked = false
+            }
+    }
+
+    btnMobile.addEventListener('click', () => {
+        openClose()
+    })
+
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            openClose()
+        })
     })
 }
 
